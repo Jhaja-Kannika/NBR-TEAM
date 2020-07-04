@@ -1,364 +1,376 @@
-<html lang="">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>ห้างทองเยาวราชดีเยี่ยม</title>
   <meta charset="utf-8">
-	<title>Professional Business Solutions and Consulting in Thailand</title>
-	<meta name="description" content="Professional Business Solutions and Consulting in Thailand" />
-  	<meta name="keywords" content="Business in Thailand , Marketing in Thailand , Logistic Thailand, Translation Thai , Recruitment Thailand" />
-	<meta name="robots" content="index, follow" />
-	<meta name="viewport" content="width=device-width">
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/print.css" media="print"/>
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
-	<link rel="stylesheet" href="css/colorbox.css"/>
-	<link rel="stylesheet" href="css/mainstyle.css" />
-	
-	
-	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.colorbox.js"></script>	
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000);
-			        return false;
-			      }
-			    }
-			});
-			$("#mainmenu a").click(function(){
-				$("#mainmenu").find(".active").removeClass("active");
-				$(this).addClass("active");
-			})
-		})
-		
-		$(window).scroll(function (event) {
-	    var scroll = $(window).scrollTop();
-	    console.log("scroll = ", scroll);
-	    //show header fixed position
-	    if(scroll > 85){
-		    $("body").addClass("fixmenu");
-	    }else {
-		    $("body").removeClass("fixmenu");
-	    }	    
-	});
-		
-	</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
 </head>
-<body>
-<a name="home"></a>
-<header class="desktop">
-	<div class="container">
-		<div class="row">
-			<div class="hd-col col-xs-4">
-				<div>
-					<a href="index.php">
-						<h1 class="mainlogo">
-							<img src="images/mainlogo.jpg" alt="THE  BUSINESS  THAILAND">
-							<span>THE  BUSINESS  THAILAND</span>
-						</h1>
-					</a>
-				</div>
-			</div>
-			<div class="hd-col col-xs-8">
-				<div>
-					<nav id="mainmenu">
-						<ul>
-							<li><a class="" href="index.php#home">HOME</a></li>
-							<li><a class="" href="index.php#ourservice">OUR SERVICE</a></li>
-							<li><a class="" href="index.php#aboutus">ABOUT US</a></li>
-							<li><a class="" href="index.php#blog">BLOG</a></li>
-							<li><a class="" href="index.php#contact">CONTACT</a></li>
-						</ul>
-					</nav>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-<header class="mobile">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-9">
-				<a href="index.php">
-						<h1 class="mainlogo">
-							<img src="images/mainlogo.jpg" alt="THE  BUSINESS  THAILAND">
-							<span>THE  BUSINESS  THAILAND</span>
-						</h1>
-					</a>
-			</div>
-			<div class="col-xs-3">
-				<div class="topbtn">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-			<div class="mobile-menu col-xs-12">
-				<nav id="mainmenu">
-					<ul>
-						<li><a class="mb" href="index.php#home">HOME</a></li>
-						<li><a class="mb" href="index.php#ourservice">OUR SERVICE</a></li>
-						<li><a class="mb" href="index.php#aboutus">ABOUT US</a></li>
-						<li><a class="mb" href="index.php#blog">BLOG</a></li>
-						<li><a class="mb" href="index.php#contact">CONTACT</a></li>
-					</ul>
-				</nav>
-			</div>
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$(".topbtn").click(function(){
-						var getM = $("header.mobile").find(".mobile-menu");
-						if(getM.hasClass("active")==false){
-							getM.slideDown();
-							getM.addClass("active");	
-						}else{
-							getM.slideUp();
-							getM.removeClass("active");
-						}
-						
-					})
-					$(".mobile-menu a").click(function(){
-						setTimeout(function(){
-							$(".mobile-menu").slideUp();
-							$(".mobile-menu").removeClass("active");
-						}, 500)
-					})
-				})
-			</script>
-		</div>
-	</div>
-</header>
-<section class="mainanner">
-	<img src="images/mainbanner.jpg" alt="mainbanner">
-</section>
-<a name="ourservice"></a>
-<section class="service">
-	<div class="container">
-		<div class="row">
-			<div class="section-col col-lg-3 col-sm-6">
-				<article class="service-box">
-					<figure>
-						<img src="images/servicetype_01.png" alt="servicetype_01" width="232" height="240">
-						<figcaption>
-							<h2>COMPANY SETUP</h2>
-							<ul>
-								<li>Company Registration</li>
-								<li>Office Rental</li>
-								<li>Banking Operation</li>
-								<li>Recruitment</li>
-							</ul>
-						</figcaption>
-					</figure>
-				</article>
-			</div>
-			<div class="section-col col-lg-3 col-sm-6 ">
-				<article class="service-box">
-					<figure>
-						<img src="images/servicetype_03.png" alt="servicetype_01" width="232" height="240">
-						<figcaption>
-							<h2>MARKETING</h2>
-							<ul>
-								<li>Digital Marketing</li>
-								<li>Offline Marketing</li>
-								<li>Graphic/Web Design</li>
-								<li>Software Development</li>
-							</ul>
-						</figcaption>
-					</figure>
-				</article>
-			</div>
-			<div class="section-col col-lg-3 col-sm-6">
-				<article class="service-box">
-					<figure>
-						<img src="images/servicetype_05.png" alt="servicetype_01" width="232" height="240">
-						<figcaption>
-							<h2>SERVICES</h2>
-							<ul>
-								<li>Translation</li>
-								<li>Touring and Transportation</li>
-								<li>Interpreter</li>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-							</ul>
-						</figcaption>
-					</figure>
-				</article>
-			</div>
-			<div class="section-col col-lg-3 col-sm-6">
-				<article class="service-box">
-					<figure>
-						<img src="images/servicetype_07.png" alt="servicetype_01" width="232" height="240">
-						<figcaption>
-							<h2>OTHERS</h2>
-							<ul>
-								<li>Product Import/Export </li>
-								<li>Logistics</li>
-							</ul>
-						</figcaption>
-					</figure>
-				</article>
-			</div>
-		</div>
-	</div>
-</section>
-<a name="aboutus"></a>
-<section class="aboutus">
-	<div class="container">
-		<div class="row">
-			<div class="section-col col-md-8">
-				<article class="about-box">
-				<h2>PROVIDING <span style="color: #ec1c24;">TECHNICAL</span><br><span style="color: #2e3191;">SUPPORT</span> ASSISTANCE!</h2>
-				<p>
-					The company has established in order to consult and coordinate foreign companies wanting to do business in Thailand. For purposed of registered company, supplying the human resources, banking operations , office rental supply, digital/offline marketing, interpreting, translation, bringing guests to travel/transport in the country and includes import and export of goods from Thailand. You can be sure we have the strength of the company as follows.
-				</p>
-				<ol>
-					<li><span>Listed companies in Thailand legally, since 2006.</span></li>
-					<li><span>Can be contacted 24 hours a day without thinking about the different periods of time in each country.</span></li>
-					<li><span>Employs more than 30 Officer who support facilities in Bangkok, the capital.</span></li>
-					<li><span>Current international companies in attendance than 9 countries, more than 70 companies trust us.</span></li>
-				</ol>
-				</article>
-			</div>
-		</div>
-	</div>
-</section>
-<a name="blog"></a>
-<section class="blog">
-	<div class="container">
-		<div class="row">
-		<div class="section-col">
-		<span class="veralign">
-		<h2 class="section-title col-md-12">LATEST BLOGs</h2>
-		
-		
-		<div class="col-lg-3 col-sm-6 col-md-3">
-			<div class="blog-box">
-			<div class="date-ball">
-				<span>
-					<div class="number">20</div>
-					<div class="month">MAY</div>
-				</span>
-			</div>
-			<article>
-				<div class="blog-lead">
-					The baht on Tuesday plummeted to its lowest level in nearly six years, while the stock market erased this year's gains as foreign investors shunned local�assets on worries over�Thailand's economic health.
-				</div>
-				<a href="http://www.bangkokpost.com/business/news/559603/baht-falls-to-six-year-low" class="more" target="_blank">MORE INFO</a>
-			</article>
-			</div>
-		</div>
-		
-		
-		<div class="col-lg-3 col-sm-6 col-md-3">
-			<div class="blog-box">
-			<div class="date-ball">
-				<span>
-					<div class="number">17</div>
-					<div class="month">MAY</div>
-				</span>
-			</div>
-			<article>
-				<div class="blog-lead">
-					Losses from subsidiaries, mainly beleaguered start-up NokScoot, diminished otherwise-solid first-quarter results for Nok Air.
-				</div>
-				<a href="http://www.bangkokpost.com/business/news/562991/subsidiaries-hamstring-nok-air" class="more" target="_blank">MORE INFO</a>
-			</article>
-			</div>
-		</div>
-		
-		
-		<div class="col-lg-3 col-sm-6 col-md-3">
-			<div class="blog-box">
-			<div class="date-ball">
-				<span>
-					<div class="number">10</div>
-					<div class="month">MAY</div>
-				</span>
-			</div>
-			<article>
-				<div class="blog-lead">
-					A number of small hotels in Phuket that cannot shoulder their financial burden look set to be sold in 2016 despite tourism picking up again since late last year.
-				</div>
-				<a href="http://www.bangkokpost.com/business/tourism/555875/small-phuket-hotels-feeling-the-pinch" class="more" target="_blank">MORE INFO</a>
-			</article>
-			</div>
-		</div>
-		
-		
-		
-		
-		
-		</span>
-		</div>
-	</div>
-	</div>
-</section>
-<a name="contact"></a>
-<footer>
-	<div class="container">
-		<div class="row footer-top">
-			<div class="col-lg-4 col-sm-4 location">
-				<h2>LOCATIONS</h2>
-				<ul>
-					<li>90/16 Sriayutthaya Road, Vachirapayabaan,
-					Dusit Bangkok 10300</li>
-					<li>Tel: +66814037467 (24hr.)</li>
-					<li>e-mail : info@thebusinessthailand.com </li>
-				</ul>
-			</div>
-			<div class="col-lg-4 col-sm-4 enquiry">
-				<h2>ENQUIRY</h2>
-				<a href="contact.php" class="callform">ENQUIRY FORM</a>
-			</div>
-			<div class="col-lg-4 col-sm-4 copy">
-				<h2>COPYRIGHT</h2>
-				<img src="images/mainlogo.jpg" alt="mainlogo" style="height: 17px;"> ? 2015
-			</div>
-		</div>
-	</div>
-	<div id="map-canvas"></div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>ห้างทองเยาวราชดีเยี่ยม</h1> 
+  <p>ห้างทองเยาวราชดีเยี่ยม จำหน่ายทองคำรูปพรรณ ทองคำแท่ง กรอบพระ ฯลฯ</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>ABOUT</h2>
+     <ul class="nav navbar-nav navbar-right">
+      <h3>สินค้า: จี้ ต่างหู สร้อยข้อมือ สร้อยคอ แหวน ทองคำแท่ง 
+ทองคำรูปพรรณ 96.5% : สร้อยคอ สร้อยแขน แหวน จี้ ต่างหู <br>
+จำหน่อยทองคำแท้ 96.5% จาก เยาวราช <br>
+ทองคำแท่ง <br>
+รับซื้อทองเก่าให้ราคาสูงสุด <br>
+รับเลี่ยมกรอบพระ 90% <br>
+รับออมทอง 0% ฟรีดอกเบี้ย <br>
+รับขายฝากทอง ดอกเบี้ยต่ำ <br>
+รับขึ้นเงินรางวัลล็อตเตอรี่ 1.5% <br>
+รับงานสั่งทำตามความต้องการของลูกค้า <br>
+เงินรูปพรรณ (Silver)  : สร้อยคอ สร้อยแขน แหวน จี้ 
+</h3>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br>
+</div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  
+
+   
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/แหวน/แหวน/1.แหวนโปร่ง.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/จี้/จี้/2.จี้พิกุล.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/ต่างหู/ต่างหู/S__4464651.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/สร้อยข้อมือ/สร้อยข้อมือ/4.กำไล2บ. สานลงยา.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/สร้อยคอ/สร้อยคอ/23.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body"><img src="เยาวราชดีเยี่ยม/สร้อยคอ/สร้อยคอ/3.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+      <br><button class="btn btn-default btn-lg">SEE MORE</button><br>
+    </div>
+  <br>
+  
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <h4>ติดต่อฝ่ายลูกค้าสัมพันธ์ <br> โทร : 098 798 9394 <br>  LINE@ : @342zbbsv <br><a href="https://www.facebook.com/%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%A2%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1-728442484199953/"> Facebook Page : ห้างทองเยาวราชดีเยี่ยม</a></h4>
+      
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  
 </footer>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".callform").colorbox();
-	})
-</script>
-<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-<script type="text/javascript">
-    function initialize() {
-		  var myLatlng = new google.maps.LatLng(13.771669, 100.501890);
-		  var mapOptions = {
-		    zoom: 16,
-		    center: myLatlng
-		  }
-		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-		
-		  var marker = new google.maps.Marker({
-		      position: myLatlng,
-		      map: map,
-		      title: 'THE BUSINESS THAILAND'
-		  });
-		}
-		
-		google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  ga('create', 'UA-63364821-1', 'auto');
-  ga('send', 'pageview');
+      // Store hash
+      var hash = this.hash;
 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
 </script>
+
 </body>
 </html>
